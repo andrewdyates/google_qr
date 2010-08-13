@@ -7,11 +7,15 @@
 References:
   [Documentation]
   http://code.google.com/apis/chart/docs/gallery/qr_codes.html
+
+Example:
+
+>>> qr = QR("abc")
+... open("qr.png", "w").write(qr.img)
 """
 __authors__ = ['"Andrew D. Yates" <andrew.yates@hhmds.com>',]
 
 
-import os
 import urllib
 import urllib2
 
@@ -32,7 +36,7 @@ class QR(object):
   """Fetch a QR Code from Google's Chart API.
 
   Attributes:
-    chart: str of binary output in 'image/png' format or None
+    img: str of binary output in 'image/png' format or None
   """
 
   def __init__(self, data, size=SIZE, code=CODE, level=LEVEL, margin=MARGIN):
@@ -67,4 +71,4 @@ class QR(object):
         raise ValueError(e.read())
       else:
         raise
-    self.chart = response.read()
+    self.img = response.read()
