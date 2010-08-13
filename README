@@ -1,0 +1,11 @@
+google_qr
+Google Chart: QR Code API wrapper for Python
+
+Version 1
+http://github.com/andrewdyates/google_qr
+git@github.com:andrewdyates/google_qr.git
+
+Copyright © 2010
+Andrew D. Yates
+
+This is a simple wrapper around urllib2 HTTP POST to the API service.
