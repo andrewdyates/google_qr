@@ -13,8 +13,6 @@ Example:
 >>> qr = QR("abc")
 ... open("qr.png", "w").write(qr.img)
 """
-__authors__ = ['"Andrew D. Yates" <andrew.yates@hhmds.com>',]
-
 
 import urllib
 import urllib2
